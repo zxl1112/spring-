@@ -24,5 +24,6 @@
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" value="datasource"></property>
     </bean>
+
     <tx:annotation-driven transaction-manager="txManager"></tx:annotation-driven>
 </beans>
